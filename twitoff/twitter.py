@@ -4,15 +4,8 @@ import os
 
 
 #twitter authentication
-# TWITTER_API_KEY = 'Tci8SikOMwWFPlnQOp3Zwb05E'
-# TWITTER_API_KEY_SECRET = '03hxbDzZJdN8j24drgA5NTjysxuBXcy4ljNsUgMWrYNNuMzfRo'
-
 TWITTER_API_KEY = os.getenv("TWITTER_API_KEY")
 TWITTER_API_KEY_SECRET = os.getenv("TWITTER_API_KEY_SECRET")
-
-# TWITTER_API_KEY = 'Tci8SikOMwWFPlnQOp3Zwb05E'
-# TWITTER_API_KEY_SECRET = '03hxbDzZJdN8j24drgA5NTjysxuBXcy4ljNsUgMWrYNNuMzfRo'
-
 
 auth = tweepy.OAuthHandler(TWITTER_API_KEY, TWITTER_API_KEY_SECRET)
 api = tweepy.API(auth)
