@@ -1,7 +1,9 @@
 from .models import db, User, Tweet
 import tweepy
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 #twitter authentication
 TWITTER_API_KEY = os.getenv("TWITTER_API_KEY")
