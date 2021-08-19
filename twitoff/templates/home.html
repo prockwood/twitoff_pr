@@ -1,0 +1,28 @@
+<html>
+  <body>
+      <span>enter 2 twitter users and a text sample to predict</span>
+      <form method="POST" action="/">
+          <label>User1</label>
+          <input type="text" name="User1" id="User1">
+          <label>User2</label>
+          <input type="text" name="User2" id="User2">
+          <label>Predict</label>
+          <input type="text" name="Predict" id="Pred">
+          <!-- <label>Tweet</label>
+          <input type="text" name="tweet" id="tweet"> -->
+          <input type="submit" value="Add">
+      </form>
+
+      <h3> {{response}} </h3>
+
+
+      <table>
+        {% for user in users %}
+        <tr>
+            {{user.id}}: {{user.name}}
+        </tr>
+        {% endfor %}
+      </table>
+
+  </body>
+</html>
