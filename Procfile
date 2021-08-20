@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT twitoff:APP
+web: gunicorn twitoff:APP -t 120
