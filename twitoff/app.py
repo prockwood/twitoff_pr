@@ -6,7 +6,7 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 import spacy
 import en_core_web_sm
