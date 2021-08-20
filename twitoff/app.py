@@ -16,8 +16,8 @@ nlp_model.to_disk('my_nlp')
 
 def create_app():
     #define database path
-    app_dir = os.path.dirname(os.path.abspath(__file__))
-    database = "sqlite:///{}".format(os.path.join(app_dir, "twitoff.sqlite3"))
+    # app_dir = os.path.dirname(os.path.abspath(__file__))
+    # database = "sqlite:///{}".format(os.path.join(app_dir, "twitoff.sqlite3"))
     # print(database)
     nlp = spacy.load('my_nlp')
 
@@ -44,7 +44,7 @@ def create_app():
         p_text = request.form.get('Predict')
         response = None
 
-        print(User1, User2)
+        # print(User1, User2)
 
         # on post of name
         if User1:

@@ -6,24 +6,23 @@ Flask == 1.1.2
 # twitoff_pr/twitoff/models.py: 1
 Flask_SQLAlchemy == 2.5.1
 
-# twitoff_pr/twitoff/app.py: 10
-# en_core_web_sm == 3.1.0
+# twitoff_pr/twitoff/app.py: 12
+en_core_web_sm == 3.1.0
 
 # twitoff_pr/twitoff/app.py: 5
-numpy == 1.20.1
+numpy == 1.20.3
 
+# twitoff_pr/twitoff/app.py: 7
 # twitoff_pr/twitoff/twitter.py: 4
 python_dotenv == 0.19.0
 
 # twitoff_pr/twitoff/app.py: 6
-scikit_learn == 0.24.1
+sklearn == 0.0
 
-# twitoff_pr/twitoff/app.py: 9
+# twitoff_pr/twitoff/app.py: 11
 spacy == 3.1.1
 
 # twitoff_pr/twitoff/twitter.py: 2
 tweepy == 3.10.0
 
-gunicorn == 20.0.4
-
-psycopg2-binary == 2.9.1
+gunicorn == 20.1.0
