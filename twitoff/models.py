@@ -6,7 +6,6 @@ db = SQLAlchemy()
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True) # id as primary key
     name = db.Column(db.String(50), nullable=False) # user name
-    last_tweet_id = (db.Integer)
 
     def __repr__(self):
         return "<User: {}>".format(self.name)
