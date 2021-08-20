@@ -15,7 +15,7 @@ class User(db.Model):
 class Tweet(db.Model):
     """Tweet text data - associated with Users Table"""
     id = db.Column(db.Integer, primary_key=True)
-    text = db.Column(db.Unicode(300))
+    text = db.Column(db.Unicode(800))
     # text_vec = db.Column(db.PickleType, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey(
         "user.id"), nullable=False)
