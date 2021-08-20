@@ -6,9 +6,6 @@ Flask == 1.1.2
 # twitoff_pr/twitoff/models.py: 1
 Flask_SQLAlchemy == 2.5.1
 
-# twitoff_pr/twitoff/app.py: 12
-en_core_web_sm == 3.1.0
-
 # twitoff_pr/twitoff/app.py: 5
 numpy == 1.20.3
 
