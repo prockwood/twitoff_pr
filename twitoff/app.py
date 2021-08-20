@@ -4,7 +4,9 @@ from .twitter import add_user, add_tweets
 import os
 import numpy as np
 from sklearn.linear_model import LogisticRegression
+from dotenv import load_dotenv
 
+load_dotenv()
 
 import spacy
 import en_core_web_sm
@@ -23,7 +25,7 @@ def create_app():
     app = Flask(__name__)
     #link app to database, squash warnings
     # app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
-    app.config["SQLALCHEMY_DATABASE_URI"] = database
+    app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URI")
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     #database linking
     db.init_app(app)
